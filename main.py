@@ -13,7 +13,7 @@ def make_txt(names, new_prices, old_prices, category, date):
         str_for_file += str(counter) + '. ' + names[i] + ' ' + new_prices[i] + ' ' + old_prices[i] + '\n\n'
         counter += 1
     filename = 'Silpo_' + category + '.txt'
-    with open(filename, 'w') as file:
+    with open(filename, 'w', encoding='utf-8') as file:
         file.write(str_for_file)
 
 
